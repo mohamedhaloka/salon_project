@@ -1,0 +1,170 @@
+{
+  "project_info": {
+    "project_number": "602810632462",
+    "project_id": "salon-8853a",
+    "storage_bucket": "salon-8853a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602810632462:android:da134967ae33f403cb2f5f",
+        "android_client_info": {
+          "package_name": "com.example.salon_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602810632462-2rlkk3gasqlm7c31v3fv02se2gi7hu6n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.salon_app",
+            "certificate_hash": "0b09ee4130e4009771f91e9d2256be94dba7c45d"
+          }
+        },
+        {
+          "client_id": "602810632462-tbgdno1mlmlk1v1g17p4cl3of5bnlv01.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.salon_app",
+            "certificate_hash": "229f55ddf2edca1935760d4967503d7708e6c683"
+          }
+        },
+        {
+          "client_id": "602810632462-i19p16j4gmmdqt5oatb8ecej825d17t0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoCALAMbDJmamr-UVW_zkSa4xEuoaxAZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602810632462-176lttr5gql1g7svbu592s0ktlip2slq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "602810632462-0pupgulnrprvarkq5tt6aik4ndotvrar.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.salon"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602810632462:android:53ca2b3b56cab8a0cb2f5f",
+        "android_client_info": {
+          "package_name": "com.salon.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602810632462-i19p16j4gmmdqt5oatb8ecej825d17t0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoCALAMbDJmamr-UVW_zkSa4xEuoaxAZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602810632462-176lttr5gql1g7svbu592s0ktlip2slq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "602810632462-0pupgulnrprvarkq5tt6aik4ndotvrar.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.salon"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602810632462:android:fd0abe63dffa253fcb2f5f",
+        "android_client_info": {
+          "package_name": "com.salon.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602810632462-i19p16j4gmmdqt5oatb8ecej825d17t0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoCALAMbDJmamr-UVW_zkSa4xEuoaxAZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602810632462-176lttr5gql1g7svbu592s0ktlip2slq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "602810632462-0pupgulnrprvarkq5tt6aik4ndotvrar.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.salon"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602810632462:android:beaa691facdf20accb2f5f",
+        "android_client_info": {
+          "package_name": "com.spiderte8.salon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602810632462-i19p16j4gmmdqt5oatb8ecej825d17t0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoCALAMbDJmamr-UVW_zkSa4xEuoaxAZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602810632462-176lttr5gql1g7svbu592s0ktlip2slq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "602810632462-0pupgulnrprvarkq5tt6aik4ndotvrar.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.salon"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
