@@ -432,12 +432,12 @@ class AddAppointmentScreenState extends State<AddAppointmentScreen> {
                                     rowItem(
                                         title: AppStrings.subtotal.tr(),
                                         subtitle: '$totalPrice ر.س'),
-                                    const SizedBox(
-                                      height: 16,
-                                    ),
-                                    rowItem(
-                                        title: AppStrings.tax.tr(),
-                                        subtitle: '12 %'),
+                                    // const SizedBox(
+                                    //   height: 16,
+                                    // ),
+                                    // rowItem(
+                                    //     title: AppStrings.tax.tr(),
+                                    //     subtitle: '12 %'),
                                     const SizedBox(
                                       height: 16,
                                     ),

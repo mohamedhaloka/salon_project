@@ -2,10 +2,14 @@
 
 import 'dart:developer';
 
+import 'package:date_picker_timeline/extra/color.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:salon_app/modules/web_view/web_view.dart';
+import 'package:salon_app/utils.dart';
 
 import '../../../shared/componants/app_constane.dart';
 import '../../../shared/componants/app_strings.dart';
@@ -36,6 +40,7 @@ class _LoginScreenState extends State<RegisterScreen> {
   var formKey = GlobalKey<FormState>();
 
   bool loading = false;
+  bool acceptRules = false;
   @override
   void dispose() {
     emailController.dispose();
@@ -234,11 +239,98 @@ class _LoginScreenState extends State<RegisterScreen> {
                       SizedBox(
                         height: 39.h,
                       ),
+                      InkWell(
+                        onTap: () {
+                          acceptRules = !acceptRules;
+                          setState(() {});
+                        },
+                        child: Row(
+                          children: [
+                            Checkbox(
+                              value: acceptRules,
+                              onChanged: (value) {
+                                acceptRules = value!;
+                                setState(() {});
+                              },
+                            ),
+                            Expanded(
+                              child: RichText(
+                                text: TextSpan(
+                                  text: '${'acceptTo'.tr()} ',
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .bodyMedium!
+                                      .copyWith(fontWeight: FontWeight.w500),
+                                  children: [
+                                    TextSpan(
+                                        text: 'termsAndConditions'.tr(),
+                                        recognizer: TapGestureRecognizer()
+                                          ..onTap = () {
+                                            String url =
+                                                'https://www.salon.spider-te8.com/storage/2023/04/26/2ed8dc889f3d2c18181bac71d43379d75a56a736.pdf';
+                                            Navigator.of(context).push(
+                                                MaterialPageRoute(
+                                                    builder: (_) => PDFViewer(
+                                                        title:
+                                                            'termsAndConditions',
+                                                        url: url)));
+                                          },
+                                        style: Theme.of(context)
+                                            .textTheme
+                                            .bodyMedium!
+                                            .copyWith(
+                                              fontWeight: FontWeight.bold,
+                                              color: AppColors
+                                                  .defaultSelectionColor,
+                                            )),
+                                    TextSpan(
+                                      text: ' ${'and'.tr()} ',
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .bodyMedium!
+                                          .copyWith(
+                                              fontWeight: FontWeight.w500),
+                                    ),
+                                    TextSpan(
+                                        text: 'privacyPolicy'.tr(),
+                                        recognizer: TapGestureRecognizer()
+                                          ..onTap = () {
+                                            String url =
+                                                'https://www.salon.spider-te8.com/storage/2023/04/11/9dea6d57f5c0fc941b7ddab8c3fe9f73ad1be02a.pdf';
+                                            Navigator.of(context).push(
+                                                MaterialPageRoute(
+                                                    builder: (_) => PDFViewer(
+                                                        title: 'privacyPolicy',
+                                                        url: url)));
+                                          },
+                                        style: Theme.of(context)
+                                            .textTheme
+                                            .bodyMedium!
+                                            .copyWith(
+                                              fontWeight: FontWeight.bold,
+                                              color: AppColors
+                                                  .defaultSelectionColor,
+                                            )),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        height: 12.h,
+                      ),
                       SizedBox(
                         height: 64.h,
                         width: 320.w,
                         child: ElevatedButton(
                           onPressed: () async {
+                            if (!acceptRules) {
+                              showAlertToast('acceptRulesFirst'.tr());
+                              return;
+                            }
+
                             if (!formKey.currentState!.validate()) return;
                             loading = true;
                             setState(() {});

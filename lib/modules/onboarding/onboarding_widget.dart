@@ -16,11 +16,11 @@ List<BoardingModel> boarding = [
         width: 210.w,
         decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage(ImageAssets.backgroundLogoImage1),
-              )),
-        child:   Image.asset(
-
-          ImageAssets.onBoardingLogo1,scale: 1.2,
+          image: AssetImage(ImageAssets.backgroundLogoImage1),
+        )),
+        child: Image.asset(
+          ImageAssets.onBoardingLogo1,
+          scale: 1.2,
         ),
       ),
       title: AppStrings.onBoardingTitle1,
@@ -29,11 +29,11 @@ List<BoardingModel> boarding = [
       container: Container(
         height: 240.h,
         width: 210.w,
-        decoration:  const BoxDecoration(
+        decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage(ImageAssets.backgroundLogoImage2),
-               )),
-        child:   const Image(
+          image: AssetImage(ImageAssets.backgroundLogoImage2),
+        )),
+        child: const Image(
           image: AssetImage(ImageAssets.onBoardingLogo2),
         ),
       ),
@@ -45,35 +45,35 @@ List<BoardingModel> boarding = [
         width: 210.w,
         decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage(ImageAssets.backgroundLogoImage3),
-               )),
-        child:  const Image(
+          image: AssetImage(ImageAssets.backgroundLogoImage3),
+        )),
+        child: const Image(
           image: AssetImage(ImageAssets.onBoardingLogo3),
         ),
       ),
       title: AppStrings.onBoardingTitle3,
       subTitle: AppStrings.onBoardingSubTitle3),
-  BoardingModel(
-      container: Container(
-        height: 240.h,
-        width: 210.w,
-        decoration: const BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage(ImageAssets.backgroundLogoImage3),
-               )),
-        child:  const Image(
-          image: AssetImage(ImageAssets.onBoardingLogo1),
-        ),
-      ),
-      title: AppStrings.onBoardingTitle3,
-      subTitle: AppStrings.onBoardingSubTitle4)
+  // BoardingModel(
+  //     container: Container(
+  //       height: 240.h,
+  //       width: 210.w,
+  //       decoration: const BoxDecoration(
+  //           image: DecorationImage(
+  //               image: AssetImage(ImageAssets.backgroundLogoImage3),
+  //              )),
+  //       child:  const Image(
+  //         image: AssetImage(ImageAssets.onBoardingLogo1),
+  //       ),
+  //     ),
+  //     title: AppStrings.onBoardingTitle3,
+  //     subTitle: AppStrings.onBoardingSubTitle4)
 ];
 
 Widget buildBoardingImage(BoardingModel model) => Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         model.container,
-         SizedBox(height: 50.h),
+        SizedBox(height: 50.h),
         Text(
           model.title.tr(),
           style: TextStyle(
@@ -82,7 +82,9 @@ Widget buildBoardingImage(BoardingModel model) => Column(
               fontFamily: FontConstants.cairoFontFamily,
               fontSize: 25.sp),
         ),
-        SizedBox(height: 10.h,),
+        SizedBox(
+          height: 10.h,
+        ),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 60.0.w),
           child: Text(

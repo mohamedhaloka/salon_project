@@ -1,6 +1,7 @@
 import 'dart:developer';
 import 'dart:io';
 
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'package:webviewx/webviewx.dart';
@@ -32,7 +33,7 @@ class _PaymentWebViewScreenState extends State<PaymentWebViewScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'الدفع',
+          'pay'.tr(),
           style: theme.textTheme.titleSmall!.copyWith(color: Colors.white),
         ),
         backgroundColor: theme.primaryColor,

@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:salon_app/shared/componants/app_strings.dart';
@@ -8,6 +9,7 @@ import '../../../services/notification_service.dart';
 import '../../../shared/componants/app_constane.dart';
 import '../../../shared/componants/assets_manager.dart';
 import '../../../shared/componants/componants.dart';
+import '../../../shared/componants/di.dart';
 import '../../../shared/componants/fonts_manager.dart';
 import '../../../shared/componants/language_type.dart';
 import '../../../shared/local_data_source/locale_data_source.dart';
@@ -30,6 +32,8 @@ class _LoginScreenState extends State<LoginScreen> {
 
   bool loading = false;
 
+  final AppPreferences _appPreferences = instance<AppPreferences>();
+
   @override
   void dispose() {
     emailController.dispose();
@@ -46,9 +50,52 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       body: background(
         child: Padding(
-          padding: EdgeInsets.only(top: 68.h),
+          padding: EdgeInsets.only(top: 5.h),
           child: Column(
             children: [
+              Align(
+                alignment: Alignment.centerLeft,
+                child: InkWell(
+                  onTap: () {
+                    _changeLanguage();
+                  },
+                  child: Container(
+                      padding: EdgeInsets.only(
+                          left: isRtl() ? 27 : 10,
+                          right: isRtl() ? 10 : 27,
+                          top: 11.h,
+                          bottom: 10),
+                      height: 64.h,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                      child: Row(
+                        children: [
+                          Container(
+                              height: 43.h,
+                              width: 43.w,
+                              decoration: const BoxDecoration(
+                                  image: DecorationImage(
+                                      image: AssetImage(
+                                          ImageAssets.backgroundIcon))),
+                              child: const Image(
+                                  image: AssetImage(
+                                      ImageAssets.changeLanguageIcon))),
+                          SizedBox(
+                            width: 17.w,
+                          ),
+                          Text(
+                            AppStrings.english.tr(),
+                            style: const TextStyle(
+                                fontWeight: FontWeightManager.medium,
+                                fontFamily: FontConstants.cairoFontFamily,
+                                fontSize: 16),
+                          ),
+                        ],
+                      )),
+                ),
+              ),
+              SizedBox(height: 45.h),
               CircleAvatar(
                 radius: 60,
                 backgroundColor: HexColor('#EC8E6C').withOpacity(0.1),
@@ -392,5 +439,10 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
       ),
     );
+  }
+
+  _changeLanguage() {
+    _appPreferences.changeAppLanguage();
+    Phoenix.rebirth(context);
   }
 }

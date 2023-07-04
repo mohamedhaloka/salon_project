@@ -6,7 +6,6 @@ import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:salon_app/firebase_options.dart';
-import 'package:salon_app/modules/auth/auth__screens/login_screen.dart';
 import 'package:salon_app/services/notification_service.dart';
 import 'package:salon_app/shared/componants/app_constane.dart';
 import 'package:salon_app/shared/componants/di.dart';
@@ -15,6 +14,7 @@ import 'package:salon_app/shared/local_data_source/locale_data_source.dart';
 import 'package:salon_app/shared/remote_data_source/remote_data_source.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'modules/auth/auth__screens/login_screen.dart';
 import 'modules/chose_place/choose_place.dart';
 import 'modules/onboarding/onboarding_screen.dart';
 

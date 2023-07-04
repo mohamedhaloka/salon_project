@@ -17,6 +17,11 @@
   "orSignInWith": "Or Sign In With",
   "doNotHaveAccount": "don’t have account?",
   "createAccount": "sign up",
+  "acceptTo": "Accept to",
+  "termsAndConditions": "Terms and Conditions",
+  "and": "and",
+  "privacyPolicy": "Privacy Policy",
+  "acceptRulesFirst": "Agree to the terms and conditions and privacy policy first",
   "discoverBarbershops": "Discover barbershops",
   "barbershopName": "barbershop name",
   "restorePassword": "Restore password by email",
@@ -108,5 +113,6 @@
   "confirm-password-required": "Confirm password required",
   "confirm-password-not-match": "Password and confirm password not match",
   "enter-otp-code": "OTP",
-  "otp-code-required": "OTP required"
+  "otp-code-required": "OTP required",
+  "pay": "Pay"
 }

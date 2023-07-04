@@ -2,8 +2,8 @@
   "on_boarding_title1": "احجز وانت في بيتك",
   "on_boarding_title2": "احجز موعدك الان",
   "on_boarding_title3": "الحلاق المفضل لديك",
-  "on_Boarding_SubTitle1": "عندك مناسبة وخايف/خايفة الصالونات تكون زحمة تطبيق صالون هيظبطك",
-  "on_Boarding_SubTitle2": "بنخفف عليك عناء الانتظار وبنظبطك بموعد قريب يخليك تتجاوز كل الزحمة",
+  "on_Boarding_SubTitle1": "عندك مناسبة وخايف/خايفة الصالونات تكون زحمة تطبيق صالون بنضبطك",
+  "on_Boarding_SubTitle2": "بنخفف عليك عناء الانتظار وبنضبطك بموعد قريب يخليك تتجاوز كل الزحمة",
   "on_Boarding_SubTitle3": "ابحث عن الصالون المفضل لديك واطلع علي خدمات مصففي الشعر والتجميل",
   "on_Boarding_SubTitle4": "اختر خبير التصفيف والتجميل المفضل لديك واحجز موعدك معه وروحله في الوقت اللي تختاره",
   "skip": "تخطي",
@@ -19,6 +19,11 @@
   "barbershopName": "اسم محل الحلاقة",
   "restorePassword": "استعد كلمة المرور من خلال بريدك الالكتروني",
   "emilHintText": "Example@gmail.com",
+  "acceptTo": "الموافقه على",
+  "termsAndConditions": "الشروط و الاحكام",
+  "and": "و",
+  "privacyPolicy": "سياسة الخصوصية",
+  "acceptRulesFirst": "قم بالموافقه علي الشروط و الاحكام و سياسة الخصوصية أولاً",
   "notesHintText": "أضف ملاحظاتك",
   "reservationDate": "مواعيد الحجز",
   "notes": "الملاحظات",
@@ -109,5 +114,6 @@
   "confirm-password-required": "حقل تأكيد كلمة المرور مطلوب",
   "confirm-password-not-match": "كلمة المرور و تأكيد كلمة المرور غير متطابقيين",
   "enter-otp-code": "كود التحقق",
-  "otp-code-required": "كود التحقق مطلوب"
+  "otp-code-required": "كود التحقق مطلوب",
+  "pay": "الدفع"
 }
